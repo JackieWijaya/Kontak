@@ -13,7 +13,7 @@ public class InsertLoader extends AsyncTaskLoader<Boolean> {
     private User user;
     private UserDataBase db;
 
-    public InsertLoader(@NonNull Context context) {
+    public InsertLoader(@NonNull Context context, User user) {
         super(context);
         this.user = user;
         db = UserDataBase.getInstance(context);

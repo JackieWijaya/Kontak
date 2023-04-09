@@ -12,7 +12,7 @@ public class DeleteLoader extends AsyncTaskLoader<Integer> {
     private int userId;
     private UserDataBase db;
 
-    public DeleteLoader(@NonNull Context context) {
+    public DeleteLoader(@NonNull Context context, int userId) {
         super(context);
         this.userId = userId;
         db = UserDataBase.getInstance(context);
